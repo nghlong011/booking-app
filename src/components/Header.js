@@ -7,7 +7,9 @@ export default class Header extends Component {
       <>
         <div className="header">
           <div className="logo">
-            <img src={logo} alt="logo"></img>
+            <a href="/">
+              <img src={logo} alt="logo"></img>
+            </a>
           </div>
           <div className="icon-header">
             <div className="icon">

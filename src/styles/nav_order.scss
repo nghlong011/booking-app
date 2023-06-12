@@ -1,12 +1,21 @@
 @import 'var';
 
-.NavBar_home {
+.NavBar {
     background-color: $primary-color;
-    width           : 600px;
+    width           : 1000px;
     height          : 80px;
     border-radius   : 10px;
     border          : white 2px solid;
     justify-content : center;
+    margin          : 0 auto;
+    margin-top      : 103px;
+    text-transform  : uppercase;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    z-index         : 100;
+    border-collapse : collapse;
 
     .nav_container {
         width : 100%;
@@ -22,23 +31,19 @@
             align-items    : center;
 
             li {
-                width          : 150px;
-                color          : white;
+                width          : 200px;
                 font-weight    : bold;
-                height         : 100%;
                 display        : flex;
                 justify-content: center;
                 align-items    : center;
                 height         : 70%;
                 border-right   : white solid 2px;
 
-                p {
-                    margin: 0px;
+                a {
+                    margin         : 0px;
+                    text-decoration: none;
+                    color          : white;
                 }
-            }
-
-            #last {
-                border: none;
             }
         }
     }

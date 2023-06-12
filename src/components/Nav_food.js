@@ -19,13 +19,13 @@ export default class Nav_food extends Component {
       },
       {
         id: 2,
-        name: "combo1nguoi",
+        name: "combo1",
         imgFood: combo1nguoi,
         nameFood: "combo 1 người",
       },
-      { id: 3, name: "combonhom", imgFood: combonhom, nameFood: "combo nhóm" },
-      { id: 4, name: "mi", imgFood: mi, nameFood: "mì indomiee" },
-      { id: 5, name: "douong", imgFood: douong, nameFood: "món phụ & đồ uống" },
+      { id: 3, name: "combon", imgFood: combonhom, nameFood: "combo nhóm" },
+      { id: 4, name: "noodles", imgFood: mi, nameFood: "mì indomiee" },
+      { id: 5, name: "drinks", imgFood: douong, nameFood: "món phụ & đồ uống" },
     ],
     arrSuggest: [
       {
@@ -58,17 +58,19 @@ export default class Nav_food extends Component {
           <div className="name_category">
             {this.state.arrFood.map((item, index) => {
               return (
-                <div className={item.name} key={item.id}>
-                  <div className="img_content">
-                    <img src={item.imgFood} alt=""></img>
+                <a href="/order">
+                  <div className={item.name} key={item.id}>
+                    <div className="img_content">
+                      <img src={item.imgFood} alt=""></img>
+                    </div>
+                    <div className="name_content">
+                      <p>
+                        {item.nameFood}{" "}
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </p>
+                    </div>
                   </div>
-                  <div className="name_content">
-                    <p>
-                      {item.nameFood}{" "}
-                      <i className="fa-solid fa-arrow-right"></i>
-                    </p>
-                  </div>
-                </div>
+                </a>
               );
             })}
           </div>

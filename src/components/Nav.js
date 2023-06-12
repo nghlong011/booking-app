@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 import "../styles/nav.scss";
 export default class Nav extends Component {
   render() {
     return (
-      <div className="NavBar">
+      <div className="NavBar_home">
         <div className="nav_container">
           <ul>
             <li>

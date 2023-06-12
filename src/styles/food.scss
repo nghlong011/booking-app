@@ -1,16 +1,17 @@
 @import 'var';
 
 .list_food {
-    margin: 103px 203px 0 203px;
+    margin     : 0 203px 0 203px;
+    padding-top: 200px;
 
-    .category {
+    .food {
         text-transform: uppercase;
         font-weight   : bold;
         width         : 100%;
         height        : fit-content;
         margin-bottom : 50px;
 
-        .title_category {
+        .title_food {
             display: flex;
 
             p {
@@ -19,12 +20,12 @@
 
             hr {
                 border     : 1px black solid;
-                width      : 80%;
+                width      : 100%;
                 margin-left: 10px;
             }
         }
 
-        .name_category {
+        .name_food {
             position      : relative;
             box-sizing    : border-box;
             width         : 100%;
@@ -33,80 +34,22 @@
             flex-direction: row;
             flex-wrap     : wrap;
 
-            a:hover {
-                text-decoration: none;
-            }
-
-            a {
-                width: 23%;
-                color: black;
-
-                div {
-                    width        : 100%;
-                    margin-right : 15px;
-                    border       : 1px solid black;
-                    border-radius: 5px;
-                    margin-top   : 15px;
-
-                    div {
-                        width : 100%;
-                        border: none;
-                        margin: 0;
-
-                        img {
-                            height: auto;
-                        }
-
-                        p {
-                            text-align: left;
-                            padding   : 10px;
-                            margin    : 0;
-                        }
-                    }
-                }
-            }
-
-        }
-    }
-
-    .suggest {
-        text-transform: uppercase;
-        font-weight   : bold;
-        width         : 100%;
-        height        : fit-content;
-        margin-bottom : 50px;
-
-        .title_suggest {
-            display: flex;
-
-            p {
-                font-size: 25px;
-            }
-
-            hr {
-                border     : 1px black solid;
-                width      : 80%;
-                margin-left: 10px;
-            }
-        }
-
-        .name_suggest {
-            display: flex;
-
             div {
-                width        : 20%;
+                width        : 23%;
                 margin-right : 15px;
                 border       : 1px solid black;
                 border-radius: 5px;
                 position     : relative;
+                margin-bottom: 50px;
 
 
                 div {
                     width : 100%;
                     border: none;
+                    margin: 0;
 
                     img {
-                        height: auto;
+                        height: 285px;
                     }
 
                     p {
@@ -116,14 +59,15 @@
                     }
                 }
 
-                .content_suggest {
+                .content_food {
                     margin-top   : 10px;
                     margin-bottom: 20px;
 
                     p {
                         text-transform: none;
                         font-weight   : normal;
-                        font-size     : 12.5px;
+                        font-size     : 13px;
+                        height        : 70px;
                     }
 
                     div {
