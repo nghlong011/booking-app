@@ -1,0 +1,90 @@
+@import 'var';
+
+.shipper-img {
+    background-image : url('../assets/img/shipper.jpg');
+    height           : 600px;
+    padding-top      : 150px;
+    display          : flex;
+    justify-content  : center;
+    align-items      : end;
+    background-size  : cover;
+    background-repeat: no-repeat;
+    margin-top       : 100px;
+}
+
+.contact {
+    width           : 100%;
+    display         : flex;
+    background-color: $primary-color;
+    color           : white;
+    justify-content : center;
+    align-items     : center;
+
+    .contact_logo {
+        width: 20%;
+
+        .logo {
+            img {
+                max-width: 40%;
+                height   : auto;
+            }
+        }
+
+        .form_contact {
+            p {
+                text-transform: uppercase;
+                font-weight   : bold;
+            }
+
+            .row {
+                height: 50px;
+
+                input {
+                    width           : 75%;
+                    border          : none;
+                    background-color: white;
+                    box-shadow      : none;
+                    text-decoration : none;
+                }
+
+                button {
+                    width           : 25%;
+                    border          : none;
+                    background-color: white;
+                    box-shadow      : none;
+                    text-decoration : none;
+                }
+            }
+        }
+    }
+
+    .contact_info {
+        display   : flex;
+        text-align: left;
+
+        div {
+            margin: 0 30px 0 30px;
+
+            h2 {
+                text-transform: uppercase;
+            }
+        }
+
+        .contact_follow {
+            i {
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+.ripple {
+    background-color : $primary-color;
+    height           : 150px;
+    background-image : url('../assets/img/footer.png');
+    display          : flex;
+    justify-content  : center;
+    align-items      : end;
+    background-size  : cover;
+    background-repeat: no-repeat;
+}
