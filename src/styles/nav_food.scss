@@ -38,15 +38,15 @@
             }
 
             a {
-                width: 23%;
-                color: black;
+                width        : 23%;
+                color        : black;
+                margin-right : 2%;
+                margin-bottom: 5vh;
 
                 div {
                     width        : 100%;
-                    margin-right : 15px;
                     border       : 1px solid black;
                     border-radius: 5px;
-                    margin-top   : 15px;
 
                     div {
                         width : 100%;
@@ -69,84 +69,9 @@
         }
     }
 
-    .suggest {
-        text-transform: uppercase;
-        font-weight   : bold;
-        width         : 100%;
-        height        : fit-content;
-        margin-bottom : 50px;
-
-        .title_suggest {
-            display: flex;
-
-            p {
-                font-size: 25px;
-            }
-
-            hr {
-                border     : 1px black solid;
-                width      : 80%;
-                margin-left: 10px;
-            }
-        }
-
-        .name_suggest {
-            display: flex;
-
-            div {
-                width        : 20%;
-                margin-right : 15px;
-                border       : 1px solid black;
-                border-radius: 5px;
-                position     : relative;
-
-
-                div {
-                    width : 100%;
-                    border: none;
-
-                    img {
-                        height: auto;
-                    }
-
-                    p {
-                        text-align: left;
-                        padding   : 10px;
-                        margin    : 0;
-                    }
-                }
-
-                .content_suggest {
-                    margin-top   : 10px;
-                    margin-bottom: 20px;
-
-                    p {
-                        text-transform: none;
-                        font-weight   : normal;
-                        font-size     : 12.5px;
-                    }
-
-                    div {
-                        display        : flex;
-                        justify-content: space-between;
-                    }
-
-                }
-
-                button {
-                    border          : none;
-                    background-color: $primary-color;
-                    box-shadow      : none;
-                    text-decoration : none;
-                    color           : white;
-                    border-radius   : 20px;
-                    position        : absolute;
-                    left            : 50%;
-                    transform       : translate(-50%, -50%);
-                    width           : 80%;
-                    height          : 40px;
-                }
-            }
-        }
+    .order_food {
+        margin     : 0;
+        padding-top: 0;
     }
+
 }

@@ -1,13 +1,6 @@
-import Header from "./components/Header";
-import Slide from "./components/Slide";
-import Contact from "./components/Contact";
-import Nav_food from "./components/Nav_food";
-import Bestseller from "./components/Order/Bestseller";
-import Combo1 from "./components/Order/Combo1";
-import ComboN from "./components/Order/ComboN";
-import Noodles from "./components/Order/Noodles";
-import Drinks from "./components/Order/Drinks";
-import Nav_order from "./components/Order/Nav_order";
+import Order from "./router/Order";
+import GioHang from "./components/GioHang";
+import Home from "./router/Home";
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,21 +15,10 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/" exact>
-            <Header></Header>
-            <Slide></Slide>
-            <Nav_food />
-            <Contact />
-          </Route>
-          <Route path="/order">
-            <Header />
-            <Nav_order />
-            <Bestseller />
-            <Combo1 />
-            <ComboN />
-            <Noodles />
-            <Drinks />
-            <Contact />
+          <Route path="/" exact component={Home}></Route>
+          <Route path="/order" component={Order}></Route>
+          <Route path="/cart">
+            <GioHang />
           </Route>
         </Switch>
       </div>

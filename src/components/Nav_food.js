@@ -7,10 +7,11 @@ import mi from "../assets/img/Trang đầu/4.jpg";
 import douong from "../assets/img/Trang đầu/5.jpg";
 import combo1 from "../assets/img/Trang đầu/6.jpg";
 import combo2 from "../assets/img/Trang đầu/7.jpg";
+import Food from "./Order/Food";
 import { Link, NavLink } from "react-router-dom";
 export default class Nav_food extends Component {
   state = {
-    arrFood: [
+    arr: [
       {
         id: 1,
         name: "bestseller",
@@ -27,7 +28,9 @@ export default class Nav_food extends Component {
       { id: 4, name: "noodles", imgFood: mi, nameFood: "mì indomiee" },
       { id: 5, name: "drinks", imgFood: douong, nameFood: "món phụ & đồ uống" },
     ],
-    arrSuggest: [
+    listID: "suggest",
+    listName: "Có thể bạn sẽ thích",
+    arrFood: [
       {
         id: 1,
         imgSuggest: combo1,
@@ -56,9 +59,9 @@ export default class Nav_food extends Component {
             <hr />
           </div>
           <div className="name_category">
-            {this.state.arrFood.map((item, index) => {
+            {this.state.arr.map((item, index) => {
               return (
-                <a href="/order">
+                <Link to={"/order/" + item.name}>
                   <div className={item.name} key={item.id}>
                     <div className="img_content">
                       <img src={item.imgFood} alt=""></img>
@@ -70,36 +73,12 @@ export default class Nav_food extends Component {
                       </p>
                     </div>
                   </div>
-                </a>
+                </Link>
               );
             })}
           </div>
         </div>
-        <div className="suggest">
-          <div className="title_suggest">
-            <p>Có thể bạn sẽ thích </p>
-            <hr />
-          </div>
-          <div className="name_suggest">
-            {this.state.arrSuggest.map((item, index) => {
-              return (
-                <div key={item.id}>
-                  <div className="img_suggest">
-                    <img src={item.imgSuggest} alt=""></img>
-                  </div>
-                  <div className="content_suggest">
-                    <div>
-                      <span>{item.nameSuggest}</span>
-                      <span>{item.price}đ</span>
-                    </div>
-                    <p>{item.contentSuggest}</p>
-                  </div>
-                  <button>Thêm vào giỏ hàng</button>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        <Food data={this.state} />;
       </div>
     );
   }

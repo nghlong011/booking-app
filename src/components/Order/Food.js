@@ -5,7 +5,7 @@ export default class Content_order extends Component {
   render() {
     return (
       <div id={this.props.data.listID}>
-        <div className="list_food">
+        <div className="order_food">
           <div className="food">
             <div className="title_food">
               <p>{this.props.data.listName}</p>

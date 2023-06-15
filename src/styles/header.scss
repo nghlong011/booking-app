@@ -30,17 +30,34 @@
         justify-content: center;
         align-items    : center;
 
-        .icon {
-            height          : 50px;
-            width           : 50px;
-            margin-right    : 20px;
-            border-radius   : 50%;
-            background-color: white;
+        a:hover {
+            text-decoration: none;
+        }
 
-            i {
-                font-size: 30px;
+        a {
+            height         : 100%;
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+            color          : black;
+
+            .icon {
+                height          : 50%;
+                width           : 50px;
+                margin-right    : 20px;
+                border-radius   : 50%;
+                background-color: white;
+                display         : flex;
+                align-items     : center;
+                justify-content : center;
+
+                i {
+
+                    font-size: 30px;
+                }
             }
         }
+
 
     }
 }
