@@ -55,6 +55,26 @@
 
                     font-size: 30px;
                 }
+
+                &.cart-icon {
+                    position: relative;
+
+                    .cart-notice {
+                        position        : absolute;
+                        background-color: $primary-color;
+                        color           : white;
+                        right           : -7px;
+                        top             : -7px;
+                        border-radius   : 50%;
+                        font-size       : 13px;
+                        font-weight     : 600;
+                        display         : flex;
+                        justify-content : center;
+                        align-items     : center;
+                        height          : 25px;
+                        width           : 25px;
+                    }
+                }
             }
         }
 

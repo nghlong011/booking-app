@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import "../styles/Cart.scss";
 import { isExistArrayAndNotEmpty } from "../utils/condition";
 import Header from "./Header";
@@ -10,28 +10,25 @@ import {
   removeCartItem,
 } from "../store/actions/cartActions";
 import { SHIPPING_CHARGES_VND } from "../utils/constant";
+import useQuantity from "../hooks/useQuantity";
 
 export default function Cart() {
   const dispatch = useDispatch();
   const listCartItem = useSelector((state) => state.cart.listCartItem);
   const [totalPrice, setTotalPrice] = useState(0);
-  const [totalQuantity, setTotalQuantity] = useState(0);
 
   useEffect(() => {
     const totalPrice = listCartItem.reduce((acc, curr) => {
       return acc + curr.price * curr.quantity;
     }, 0);
     setTotalPrice(totalPrice);
-
-    const totalQuantity = listCartItem.reduce((acc, curr) => {
-      return acc + curr.quantity;
-    }, 0);
-    setTotalQuantity(totalQuantity);
   }, [listCartItem]);
 
   useEffect(() => {
     document.getElementById("cart-title").scrollIntoView({ block: "end" });
   }, []);
+
+  const totalQuantity = useQuantity();
 
   return (
     <>
