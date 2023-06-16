@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import cb1_1 from "../../assets/img/COMBO 1 NGƯỜI/3-01.jpg";
 import cb1_2 from "../../assets/img/COMBO 1 NGƯỜI/2-01.jpg";
 import Food from "./Food";
+
 export default class Bestseller extends Component {
   state = {
     listID: "bestseller",
