@@ -1,20 +1,17 @@
 @import 'var';
 
 .slide {
-    background-image: url('../assets/img/shipper.jpg');
-    position        : relative;
-
-    height           : 600px;
+    height           : 630px;
     margin-top       : 103px;
     display          : flex;
     justify-content  : center;
     align-items      : end;
-    background-size  : cover;
+    background-size  : contain;
     background-repeat: no-repeat;
     position         : relative;
 
     .NavBar_home {
         position: absolute;
-        bottom  : -65px;
+        bottom  : -60px;
     }
 }

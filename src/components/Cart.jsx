@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import "../styles/Cart.scss";
 import { isExistArrayAndNotEmpty } from "../utils/condition";
-import Header from "./Header";
+import Cart_header from "./Cart_header";
 import Contact from "./Contact";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -32,7 +32,7 @@ export default function Cart() {
 
   return (
     <>
-      <Header />
+      <Cart_header />
       <div className="cart-container container">
         <div className="cart-title" id="cart-title">
           Giỏ hàng của tôi
