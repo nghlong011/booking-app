@@ -129,6 +129,10 @@
                 font-size: 25px;
             }
         }
+
+        @media screen and (max-width:1366px) {
+            padding-left: 200px;
+        }
     }
 
     .time {

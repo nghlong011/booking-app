@@ -27,7 +27,7 @@ export default function Cart_header() {
           <div className="icon">
             <i className="fa-solid fa-location-dot"></i>
           </div>
-          Được giao từ: Suối Hoa
+          <span>Được giao từ: Suối Hoa</span>
         </div>
         <div className="time">
           <div className="icon">
