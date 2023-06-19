@@ -19,7 +19,7 @@ export default class Order extends Component {
         <ComboN />
         <Noodles />
         <Drinks />
-        <Contact />
+        <Contact isShowImage={true} />
       </>
     );
   }
