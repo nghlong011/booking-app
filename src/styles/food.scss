@@ -107,6 +107,12 @@
 
             .name_food {
                 div {
+                    .img_food {
+                        img {
+                            height: 218.8px;
+                        }
+                    }
+
                     .content_food {
                         span {
                             font-size: 0.8rem;
@@ -138,6 +144,30 @@
                         transform       : translate(-50%, -50%);
                         width           : 80%;
                         height          : 40px;
+                    }
+                }
+
+                #drinks_6 {
+                    .img_food {
+                        img {
+                            object-fit: contain;
+                        }
+                    }
+                }
+
+                #drinks_7 {
+                    .img_food {
+                        img {
+                            object-fit: contain;
+                        }
+                    }
+                }
+
+                #drinks_8 {
+                    .img_food {
+                        img {
+                            object-fit: contain;
+                        }
                     }
                 }
             }

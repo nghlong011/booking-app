@@ -22,7 +22,7 @@ export default function Food(props) {
           <div className="name_food">
             {props.data.arrFood.map((item) => {
               return (
-                <div key={item.id}>
+                <div key={item.id} id={props.data.listID + "_" + item.id}>
                   <div className="img_food">
                     <img src={item.imgSuggest} alt=""></img>
                   </div>
