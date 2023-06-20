@@ -24,6 +24,18 @@
             }
         }
 
+        @media screen and (max-width:1366px) {
+            .title_category {
+                p {
+                    font-size: 20px;
+                }
+
+                hr {
+                    width: 75%;
+                }
+            }
+        }
+
         .name_category {
             position      : relative;
             box-sizing    : border-box;

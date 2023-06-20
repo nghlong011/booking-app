@@ -50,12 +50,6 @@
                     img {
                         height: 285px;
                     }
-
-                    p {
-                        text-align: left;
-                        padding   : 10px;
-                        margin    : 0;
-                    }
                 }
 
                 .content_food {
@@ -88,6 +82,30 @@
                     transform       : translate(-50%, -50%);
                     width           : 80%;
                     height          : 40px;
+                }
+            }
+
+            #drinks_6 {
+                .img_food {
+                    img {
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            #drinks_7 {
+                .img_food {
+                    img {
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            #drinks_8 {
+                .img_food {
+                    img {
+                        object-fit: contain;
+                    }
                 }
             }
         }
@@ -147,29 +165,7 @@
                     }
                 }
 
-                #drinks_6 {
-                    .img_food {
-                        img {
-                            object-fit: contain;
-                        }
-                    }
-                }
 
-                #drinks_7 {
-                    .img_food {
-                        img {
-                            object-fit: contain;
-                        }
-                    }
-                }
-
-                #drinks_8 {
-                    .img_food {
-                        img {
-                            object-fit: contain;
-                        }
-                    }
-                }
             }
         }
     }
